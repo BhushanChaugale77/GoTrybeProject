@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gotrybeuserdb
+    username: root  
+    password: root  
+    driver-class-name: com.mysql.cj.jdbc.Driver   
+
+  jpa:
+    hibernate:
+      ddl-auto: update  
+    show-sql: true   
+     
+
+  # Optional: HikariCP is a high-performance connection pool library
+  datasource.hikari:
+    maximum-pool-size: 10  # Connection pool size
+    minimum-idle: 2
+
+# Optional: Server port (default is 8080)
+server:
+  port: 8080
